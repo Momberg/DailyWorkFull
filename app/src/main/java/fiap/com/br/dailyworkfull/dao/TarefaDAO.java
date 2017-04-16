@@ -30,7 +30,6 @@ public class TarefaDAO {
     private static final String COLUNA_TAREFA_TIPO_ID = "tarefa_tipo_id";
     private static final String COLUNA_DATA = "data";
 
-    //private static final String[] COLUMNS = {COLUNA_ID, COLUNA_NOME,COLUNA_TAREFA_TIPO_ID};
     public String add(Tarefa tarefa) {
         long resultado;
         SQLiteDatabase db = banco.getWritableDatabase();
@@ -55,8 +54,7 @@ public class TarefaDAO {
                 TarefaDAO.TABELA_TAREFA + " t INNER JOIN " +
                 Tipo_TarefaDAO.TABELA_TAREFA_TIPO
                 + " c ON t." + TarefaDAO.COLUNA_TAREFA_TIPO_ID + " = c." +
-                Tipo_TarefaDAO.COLUNA_ID; /*+
-                " ORDER BY " + TarefaDAO.COLUNA_NOME + " ASC";*/
+                Tipo_TarefaDAO.COLUNA_ID;
         SQLiteDatabase db = banco.getReadableDatabase();
         Cursor cursor = db.rawQuery(rawQuery, null);
         Tarefa tarefa = null;

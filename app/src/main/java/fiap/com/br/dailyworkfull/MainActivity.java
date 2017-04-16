@@ -213,6 +213,9 @@ public class MainActivity extends AppCompatActivity
             editor.apply();
             startActivity(new Intent(this, LoginActivity.class));
             finish();
+        } else {
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
         }
     }
 

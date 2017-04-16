@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
+import fiap.com.br.dailyworkfull.dao.UsuarioDAO;
+import fiap.com.br.dailyworkfull.model.Usuario;
+
 public class LoginActivity extends AppCompatActivity {
 
     private final String LOGIN_DEFAULT = "android";
@@ -48,11 +51,17 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private boolean isLoginValido(){
+        UsuarioDAO db = new UsuarioDAO(getApplicationContext());
         String login = tilLogin.getEditText().getText().toString();
         String senha = tilSenha.getEditText().getText().toString();
         if(login.equals(LOGIN_DEFAULT) && senha.equals(SENHA_DEFAULT)){
             return true;
         } else {
+            for (Usuario u:db.getAll()) {
+                if(login.equals(u.getUser()) && senha.equals(u.getPassword())){
+                    return true;
+                }
+            }
             return false;
         }
     }
@@ -79,6 +88,4 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(new Intent(this, MainActivity.class));
         finish();
     }
-
-
 }

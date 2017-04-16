@@ -9,3 +9,8 @@ CREATE TABLE tarefa (
  data varchar(10) NOT NULL,
  FOREIGN KEY (tarefa_tipo_id) REFERENCES tarefa_tipo (id)
 );
+CREATE TABLE usuario (
+ id integer NOT NULL PRIMARY KEY AUTOINCREMENT,
+ user_name varchar(255) NOT NULL,
+ password varchar(255) NOT NULL
+);
