@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.about) {
-            Toast.makeText(getApplicationContext(), "Sobre", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, AboutActivity.class));
         }
 
         return super.onOptionsItemSelected(item);

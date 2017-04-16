@@ -19,13 +19,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/txNomeTarefa"
-            android:hint="Tarefa" />
+            android:hint="@string/work" />
     </android.support.design.widget.TextInputLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tipo da tarefa" />
+        android:text="@string/work_type" />
 
     <Spinner
         android:id="@+id/spTarefa"
@@ -41,5 +41,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="cadastrar"
-        android:text="Cadastrar" />
+        android:text="@string/register" />
 </LinearLayout>

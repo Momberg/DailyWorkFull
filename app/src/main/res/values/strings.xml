@@ -3,6 +3,14 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="about">About</string>
+    <string name="name_dev">Developer: Gabriel Duarte Momberg</string>
+    <string name="version">Version: 1.0</string>
+    <string name="register">Register</string>
+    <string name="work">Work</string>
+    <string name="work_type">Work Type</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="keep_connected">Keep Connected</string>
+    <string name="logout">Logout</string>
 </resources>

@@ -18,7 +18,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Login" />
+            android:hint="@string/login" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -30,18 +30,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:hint="Senha" />
+            android:hint="@string/password" />
     </android.support.design.widget.TextInputLayout>
 
     <CheckBox
         android:id="@+id/cbManterConectado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Manter Conectado" />
+        android:text="@string/keep_connected" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="logar"
-        android:text="Logar" />
+        android:text="@string/login" />
 </LinearLayout>
