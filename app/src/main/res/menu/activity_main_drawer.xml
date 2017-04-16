@@ -3,6 +3,10 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/cadastrar"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="Cadastrar" />
+        <item
             android:id="@+id/menu_logout"
             android:icon="@drawable/ic_menu_send"
             android:title="Logout" />

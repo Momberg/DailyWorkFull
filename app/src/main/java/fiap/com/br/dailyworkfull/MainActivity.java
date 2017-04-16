@@ -51,16 +51,6 @@ public class MainActivity extends AppCompatActivity
         rvTarefas = (RecyclerView) findViewById(R.id.rvTarefas);
         fabDel = (FloatingActionButton) findViewById(R.id.fabDel);
         fabEdit = (FloatingActionButton) findViewById(R.id.fabEdit);
-        final FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                id_tarefa.edit().putInt("ID", 0).apply();
-                startActivityForResult(new Intent(MainActivity.this,
-                                NovaTarefa.class),
-                     NovaTarefa.CODE_NOVA_TAREFA);
-            }
-        });
 
         fabDel.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -136,8 +126,8 @@ public class MainActivity extends AppCompatActivity
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.about) {
+            Toast.makeText(getApplicationContext(), "Sobre", Toast.LENGTH_SHORT).show();
         }
 
         return super.onOptionsItemSelected(item);
@@ -150,6 +140,13 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.menu_logout){
             logoff();
+        }
+
+        if (id == R.id.cadastrar){
+            id_tarefa.edit().putInt("ID", 0).apply();
+            startActivityForResult(new Intent(MainActivity.this,
+                            NovaTarefa.class),
+                    NovaTarefa.CODE_NOVA_TAREFA);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

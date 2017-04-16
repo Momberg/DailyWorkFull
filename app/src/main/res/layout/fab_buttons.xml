@@ -14,10 +14,11 @@
         android:layout_height="wrap_content"
         android:src="@android:drawable/ic_dialog_info"
         android:layout_above="@+id/fabDel"
-        android:layout_alignStart="@+id/fab"
         android:layout_marginStart="9dp"
         android:layout_marginTop="5dp"
-        android:visibility="invisible"/>
+        android:visibility="invisible"
+        android:layout_marginLeft="9dp"
+        android:layout_alignRight="@+id/fabDel" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fabDel"
@@ -25,24 +26,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@android:drawable/ic_delete"
-        android:layout_above="@+id/fab"
-        android:layout_alignStart="@+id/fab"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="5dp"
-        android:visibility="invisible"/>
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        app:fabSize="normal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_input_add"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp" />
-
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"/>
 
 </RelativeLayout>
