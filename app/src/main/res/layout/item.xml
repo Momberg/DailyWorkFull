@@ -14,21 +14,21 @@
             android:layout_height="wrap_content"
             android:id="@+id/nome"
             android:layout_marginLeft="8dp"
-            android:text="Nome: " />
+            android:text="@string/name_item" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tvNome"
             android:layout_toRightOf="@+id/nome"
             android:layout_marginLeft="8dp"
-            android:text="Nome" />
+            android:text="@string/default_name" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tarefa"
             android:layout_marginLeft="8dp"
             android:layout_below="@+id/nome"
-            android:text="Tarefa: " />
+            android:text="@string/work_item" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,14 +36,14 @@
             android:layout_marginLeft="3dp"
             android:layout_toRightOf="@+id/tarefa"
             android:layout_below="@+id/tvNome"
-            android:text="Tarefa" />
+            android:text="@string/default_work" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/data"
             android:layout_marginLeft="8dp"
             android:layout_below="@+id/tarefa"
-            android:text="Data: " />
+            android:text="@string/date_item" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

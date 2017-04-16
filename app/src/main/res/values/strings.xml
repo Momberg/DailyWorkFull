@@ -13,4 +13,9 @@
     <string name="password">Password</string>
     <string name="keep_connected">Keep Connected</string>
     <string name="logout">Logout</string>
+    <string name="name_item">Name: </string>
+    <string name="work_item">Work: </string>
+    <string name="date_item">Date: </string>
+    <string name="default_name">Name</string>
+    <string name="default_work">Work</string>
 </resources>
